@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, Times, sans-serif;
+    background-color: cornflowerblue;
+}
+
+#header p {
+    font-size: 30px;
+}
+#navBar {
+    background-color: darkblue;
+    overflow: hidden;
+    /*width: 80%;*/
+}
+
+#navBar a {
+    color: #367f9e;
+    padding: 10px;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navBar a:hover {
+    color: black;
+    background-color: dodgerblue;
+}
+
+#cartTotal {
+    color: #367f9e;
+    font-size: 20px;
+    float: right;
+    padding-right: 100px;
+    height: 43.2px;
+    display: flex;
+    align-items: center;
+}
+
+#productShowcase {
+    margin: auto;
+    width: 60%;
+    padding: 30px 50px;
+}
+
+#animation {
+    animation-name: first_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#animationContainer {
+    height: 50px;
+}
+
+@keyframes first_animation {
+    0% {color: black; font-size: 20px; font-family: Arial, Times, sans-serif; transform: rotate(0deg); opacity: 0 }
+    25% {color: green; font-size: 40px; font-family: "Comic Sans MS", Times, sans-serif;  transform: rotate(15deg); opacity: 1}
+    50% {color: green; font-size: 40px; font-family: "Comic Sans MS", Times, sans-serif;  transform: rotate(-15deg); opacity: 1}
+    75% {color: green; font-size: 40px; font-family: Arial, Times, sans-serif; transform: rotate(90deg) }
+    100% {color: black; font-size: 20px; font-family: Arial, Times, sans-serif; transform: rotate(0deg) }
+
+}
